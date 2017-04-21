@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.course.morefragments.GalleryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/btnLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/ic_keyboard_arrow_left"
+        android:layout_below="@+id/ivGallery"
+        android:layout_alignLeft="@+id/ivGallery"
+        android:layout_alignStart="@+id/ivGallery" />
+
+    <Button
+        android:id="@+id/btnRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnLeft"
+        android:layout_alignBottom="@+id/btnLeft"
+        android:layout_alignEnd="@+id/ivGallery"
+        android:layout_alignRight="@+id/ivGallery"
+        android:background="@drawable/ic_keyboard_arrow_right" />
+
+    <ImageView
+        android:id="@+id/ivGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/pearinmouth" />
+</RelativeLayout>
