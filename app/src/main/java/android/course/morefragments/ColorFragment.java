@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 
 import java.util.Random;
 
@@ -29,7 +30,7 @@ public class ColorFragment extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_color, container, false);
 
-        View colorFrame = (FrameLayout) v.findViewById(R.id.colorFrame);
+        View colorFrame = (LinearLayout) v.findViewById(R.id.colorFrame);
 
         Random r = new Random();
 
